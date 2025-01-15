@@ -7,8 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "generate": "express generate",
-    "config": "express config",
-    "test": "jest"
+    "config": "express config"
   },
   "keywords": [
     "express",
