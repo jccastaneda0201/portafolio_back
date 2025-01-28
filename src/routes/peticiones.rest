@@ -42,21 +42,104 @@ Content-Type: application/json
         "trabajoActual": "Full Stack Developer",
         "aboutme": "Soy desarrollador web apasionado por la tecnología, tengo 2 años de experiencia y aprendizaje continuo en el manejo de tecnologías modernas como Git, NodeJS, MySQL, TypeScript, Angular, Express.js y PHP. Recientemente completé un bootcamp en desarrollo fullstack en Bootcamp ID, lo que me permitió consolidar mis habilidades y fortalecer mi pasión por crear soluciones innovadoras y funcionales. Me entusiasma enfrentar nuevos desafíos, colaborar en equipos dinámicos y seguir creciendo en el mundo del desarrollo web.",
         "intereses": ["programación", "diseño", "inteligencia artificial"],
-        "facebook": "https://facebook.com/juanperez",
-        "twitter": "https://twitter.com/juanperez",
-        "instagram": "https://instagram.com/juanperez",
-        "linkedin": "https://linkedin.com/in/juanperez",
-        "github": "https://github.com/juanperez",
-        "websiteURL": "https://juanperez.com"
+        "facebook": "https://facebook.com/",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://instagram.com/",
+        "linkedin": "https://www.linkedin.com/in/jccastanedadev",
+        "github": "https://github.com/jccastaneda0201",
+        "websiteURL": "https://www.linkedin.com/in/jccastanedadev"
   }
 
 ###
 DELETE {{apiUsers}}/677ff61b7384b391b6c9e3ce
 
+#####################
+#     EDUCATION     #
+#####################
+
+GET {{apiEducation}}
+###
+POST {{apiEducation}}
+Content-Type: application/json
+
+{
+        "institucion": "Universidad de La Laguna",
+        "tituloObtenido": "Ingeniería Informática",
+        "fechaInicio": "2015-09-01",
+        "fechaFin": "2020-06-01",
+        "actual": true,
+        "descripcion": "Estudios de Ingeniería Informática en la Universidad de La Laguna.",
+        "tecnologias": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"]
+  }
+###
+PUT  {{apiEducation}}/6780071dc980cd9692901837
+Content-Type: application/json
+
+{
+        "institucion": "BootCamp ID",
+        "tituloObtenido": "Full Stack Developer",
+        "fechaInicio": "2024-09-10",
+        "fechaFin": "2020-06-01",
+        "actual": true,
+        "descripcion": "Estudios de Ingeniería Informática en la Universidad de La Laguna.",
+        "tecnologias": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"]
+  }
+
+###
+DELETE {{apiEducation}}/6780071dc980cd9692901837
 
 
 
+#####################
+#     LABORAL       #
+#####################
+GET {{host}}/laboral
+###
+GET {{host}}/laboral/67879cd0a20fab876a8e452f
+###
+POST {{host}}/laboral
+Content-Type: application/json
 
+{
+  "titulo": "Desarrollador Full Stack",
+  "empresa": "Staf",
+  "ubicacion": "Barcelona, España",
+  "fechaInicio": "2025-01-01",
+  "fechaFin": "", 
+  "actual": true, 
+  "funciones":[
+    "Participé en el equipo de creación y desarrollo del front-end de una web app de inicio a fin ayudando a su desarrollo y mejora en sus iteraciones con Next.js.",
+    "Desarrollo y mantenimiento de diferentes interfaces de administración de productos digitales.",
+    "Integración de servicios de tercero en el front-end en diferentes proyectos de web apps como Firebase Realtime DB, Firestore o Stripe.",
+    "Refactorización de código ya existente para hacerlo más escalable, mantenible y óptimo en rendimiento y legibilidad.",
+    "Desarrollo de landing pages con el framework Astro, aplicando buenas prácticas y metodología BEM."
+  ],
+  "descripcion": "Empresa de diseño y desarrollo de productos y soluciones digitales",
+  "habilidades": ["React", "Node.js", "MongoDB", "Express", "TypeScript"]
+}
+###
+PUT  {{host}}/laboral/67879cd0a20fab876a8e452f
+Content-Type: application/json
+
+{
+  "titulo": "Desarrollador Full Stack",
+  "empresa": "Umbrella Solutions",
+  "ubicacion": "Ciudad de México, México",
+  "fechaInicio": "2018-07-01",
+  "fechaFin": "2020-12-31", 
+  "actual": false, 
+  "funciones":[
+    "Participé en el equipo de creación y desarrollo del front-end de una web app de inicio a fin ayudando a su desarrollo y mejora en sus iteraciones con Next.js.",
+    "Desarrollo y mantenimiento de diferentes interfaces de administración de productos digitales.",
+    "Integración de servicios de tercero en el front-end en diferentes proyectos de web apps como Firebase Realtime DB, Firestore o Stripe.",
+    "Refactorización de código ya existente para hacerlo más escalable, mantenible y óptimo en rendimiento y legibilidad.",
+    "Desarrollo de landing pages con el framework Astro, aplicando buenas prácticas y metodología BEM."
+  ],
+  "descripcion": "Empresa de diseño y desarrollo de productos y soluciones digitales",
+  "habilidades": ["React", "Node.js", "MongoDB", "Express", "TypeScript"]
+}
+###
+DELETE {{host}}/laboral/678116ac16f88aa85088f4ff
 
 
 #####################
@@ -100,42 +183,6 @@ DELETE {{apiProjects}}/6780058e116a9eb66c4e2f02
 
 
 
-#####################
-#     EDUCATION     #
-#####################
-
-GET {{apiEducation}}
-###
-POST {{apiEducation}}
-Content-Type: application/json
-
-{
-        "institucion": "Universidad de La Laguna",
-        "titulo": "Ingeniería Informática",
-        "fechaInicio": "2015-09-01",
-        "fechaFin": "2020-06-01",
-        "descripcion": "Estudios de Ingeniería Informática en la Universidad de La Laguna.",
-        "skillTitle": "FULL STACK DEVELOPER",
-        "skillDescription": "Desarrollo de aplicaciones web, gestión de bases de datos, y desarrollo de APIs.",
-        "tecnologias": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"]
-  }
-###
-PUT  {{apiEducation}}/6780071dc980cd9692901837
-Content-Type: application/json
-
-{
-        "institucion": "BootCamp ID",
-        "titulo": "Full Stack Developer",
-        "fechaInicio": "2015-09-01",
-        "fechaFin": "2020-06-01",
-        "descripcion": "Estudios de Ingeniería Informática en la Universidad de La Laguna.",
-        "skillTitle": "Angular",
-        "skillDescription": "Desarrollo de aplicaciones web, gestión de bases de datos, y desarrollo de APIs.",
-        "tecnologias": ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"]
-  }
-
-###
-DELETE {{apiEducation}}/6780071dc980cd9692901837
 
 
 #####################
@@ -166,55 +213,4 @@ Content-Type: application/json
 
 ###
 DELETE {{host}}/contactos/678114c632a699754a30ee79
-
-#####################
-#     LABORAL       #
-#####################
-GET {{host}}/laboral
-###
-GET {{host}}/laboral/67879cd0a20fab876a8e452f
-###
-POST {{host}}/laboral
-Content-Type: application/json
-
-{
-  "titulo": "Desarrollador Full Stack",
-  "empresa": "Umbrella Solutions",
-  "ubicacion": "Barcelona, España",
-  "fechaInicio": "2018-07-01",
-  "fechaFin": "2021-12-31", 
-  "actual": false, 
-  "funciones":[
-    "Participé en el equipo de creación y desarrollo del front-end de una web app de inicio a fin ayudando a su desarrollo y mejora en sus iteraciones con Next.js.",
-    "Desarrollo y mantenimiento de diferentes interfaces de administración de productos digitales.",
-    "Integración de servicios de tercero en el front-end en diferentes proyectos de web apps como Firebase Realtime DB, Firestore o Stripe.",
-    "Refactorización de código ya existente para hacerlo más escalable, mantenible y óptimo en rendimiento y legibilidad.",
-    "Desarrollo de landing pages con el framework Astro, aplicando buenas prácticas y metodología BEM."
-  ],
-  "descripcion": "Empresa de diseño y desarrollo de productos y soluciones digitales",
-  "habilidades": ["React", "Node.js", "MongoDB", "Express", "TypeScript"]
-}
-###
-PUT  {{host}}/laboral/6781173316f88aa85088f505
-Content-Type: application/json
-
-{
-  "titulo": "Desarrollador Full Stack",
-  "empresa": "Umbrella Solutions",
-  "ubicacion": "Ciudad de México, México",
-  "fechaInicio": "2018-07-01",
-  "fechaFin": "2021-12-31", 
-  "actual": false, 
-  "funciones":[
-    "Participé en el equipo de creación y desarrollo del front-end de una web app de inicio a fin ayudando a su desarrollo y mejora en sus iteraciones con Next.js.",
-    "Desarrollo y mantenimiento de diferentes interfaces de administración de productos digitales.",
-    "Integración de servicios de tercero en el front-end en diferentes proyectos de web apps como Firebase Realtime DB, Firestore o Stripe.",
-    "Refactorización de código ya existente para hacerlo más escalable, mantenible y óptimo en rendimiento y legibilidad.",
-    "Desarrollo de landing pages con el framework Astro, aplicando buenas prácticas y metodología BEM."
-  ],
-  "descripcion": "Empresa de diseño y desarrollo de productos y soluciones digitales",
-  "habilidades": ["React", "Node.js", "MongoDB", "Express", "TypeScript"]
-}
-###
-DELETE {{host}}/laboral/678116ac16f88aa85088f4ff
 
