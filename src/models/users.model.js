@@ -8,7 +8,8 @@ const userSchema = new Schema(
     //About me
     trabajoActual: String,
     aboutme: String,
-    intereses: [{ type: String }],
+    skills: [{ type: String }],
+    idiomas: [{ type: String }],
     //redes sociales
     facebook: String,
     twitter: String,

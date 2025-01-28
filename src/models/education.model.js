@@ -4,10 +4,10 @@ const educationSchema = new Schema(
   {
     institucion: String,
     tituloObtenido: String,
-    fechaInicio: String,
+    fechaInicio: Date,
     fechaFin: Date,
     actual: Boolean,
-    descripcion: { type: String, maxlength: 500 },
+    logros: [{ type: String }],
     tecnologias: [{ type: String }],
   },
   { timestamps: true, versionKey: false }
