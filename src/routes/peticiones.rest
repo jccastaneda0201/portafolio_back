@@ -73,17 +73,17 @@ Content-Type: application/json
         "tecnologias": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
   }
 ###
-PUT  {{apiEducation}}/6798f003aae8b736ee63674f
+PUT  {{apiEducation}}/6798eeb6aae8b736ee63674d
 Content-Type: application/json
 
 {
-        "institucion": "TÉCNICOS DE APOYO FORMATIVOS STAF",
-        "tituloObtenido": "Desarollador Web",
-        "fechaInicio": "2024-01-15",
-        "fechaFin": "2025-09-10",
-        "actual": true,
-        "logros": ["Formación en desarrollo web desde cero.", "520 horas de formación teórica complementadas con 80 horas de prácticas profesionales."],
-        "tecnologias": ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
+        "institucion": "BOOTCAMP ID",
+        "tituloObtenido": "Full Stack Developer",
+        "fechaInicio": "2024-10-01",
+        "fechaFin": "2025-01-15",
+        "actual": false,
+        "logros": ["Dominio del stack MEAN: MongoDB, Express, Angular, Node.js", "450 horas de inmersión en desarrollo Full Stack"],
+        "tecnologias": ["Angular", "React", "Node.js", "MongoDB", "MySql", "Express", "TypeScript"]
   }
 
 ###
@@ -165,11 +165,11 @@ Content-Type: application/json
 {
         "titulo": "Proyecto Api-Store",
         "descripcion": "Esta es una api de una tienda virtual creada con node.js ",
-        "tecnologias": ["Angular", "Node.js", "MongoDB"],
+        "tecnologias": ["Angular", "Node.js", "MongoDB", "Express","JavaScript"],
         "categoria": "Desarrollo web Angular",
         "urlGitHub": "https://github.com/jccastaneda0201/api-store",
         "urlDemo": "https://github.com/jccastaneda0201/Grupo_Musical",
-        "imagenDestacada": "https://via.placeholder.com/150"
+        "imagenDestacada": "https://img.icons8.com/emoji/48/heart-suit.png"
   }
 
 ###
