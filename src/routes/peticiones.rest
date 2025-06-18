@@ -149,13 +149,13 @@ POST {{apiProjects}}
 Content-Type: application/json
 
 {
-        "titulo": "Proyecto 2",
-        "descripcion": "Este es un proyecto de desarrollo web aprendidas en Id",
-        "tecnologias": ["React", "Node.js", "MongoDB"],
-        "categoria": "Desarrollo web",
-        "urlGitHub": "https://github.com/jccastaneda0201/proyecto_hotel",
-        "urlDemo": "https://github.com/jccastaneda0201/Grupo_Musical",
-        "imagenDestacada": "https://via.placeholder.com/150"
+        "titulo": "Backroads Project",
+        "descripcion": "backroads-html - working html/css/javascript project (contains assets) working react application navigate to the folder run 'npm install' once the dependencies are installed run 'npm start'",
+        "tecnologias": ["React", "Vite.js", "Node.js" ],
+        "categoria": "Travel agency website",
+        "urlGitHub": "https://github.com/jccastaneda0201/backroad_project",
+        "urlDemo": "https://temp-backroadproject.netlify.app/",
+        "imagenDestacada": "https://github.com/jccastaneda0201/backroad_project/blob/main/public/backroads.jpg"
   }
 
 ###
